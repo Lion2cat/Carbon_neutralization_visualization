@@ -1,0 +1,1970 @@
+/********************** 初始化 start ********************/
+/* 内外边距清零 */
+* {
+    margin: 0;
+    padding: 0
+}
+
+em,
+i {
+    font-style: normal
+}
+
+li {
+    list-style: none
+}
+
+img {
+    border: 0;
+    vertical-align: middle
+}
+
+button {
+    cursor: pointer
+}
+
+button:hover {
+    color: blue;
+}
+
+a {
+    color: #666;
+    text-decoration: none
+}
+
+a:hover {
+    color: #c81623
+}
+
+button,
+input {
+    font-family: Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif
+}
+
+/* html {
+    /* font-size: 62.5%; */
+/* } */
+
+*/ body {
+    -webkit-font-smoothing: antialiased;
+    background-color: #fff;
+    font: 12px/1.5 Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+    color: #666
+}
+
+.hide,
+.none {
+    display: none
+}
+
+/* 清除浮动 */
+.clearfix:after {
+    visibility: hidden;
+    clear: both;
+    display: block;
+    content: ".";
+    height: 0
+}
+
+.clearfix {
+    *zoom: 1
+}
+
+/* 字体导入 */
+@font-face {
+    font-family: "zcool-gdh";
+    /*自行定义字体名称*/
+    src: url("../font/GaoDuanHei.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: "YouSheBiaoTiHei";
+    /*自行定义字体名称*/
+    src: url("../font/YouSheBiaoTiHei-2.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: "SourceHanSerifCN-Bold";
+    /*自行定义字体名称*/
+    src: url("../font/宋体Bold.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: "SourceHanSerifCN-SemiBold";
+    /*自行定义字体名称*/
+    src: url("../font/宋体SemiBold.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: "SourceHanSerifCN-Heavy";
+    /*自行定义字体名称*/
+    src: url("../font/宋体Heavy.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: "SourceHanSerifCN-Medium";
+    /*自行定义字体名称*/
+    src: url("../font/宋体Medium.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: "SourceHanSansCN-Medium";
+    /*自行定义字体名称*/
+    src: url("../font/黑体Medium.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: "SourceHanSansCN-Heavy";
+    /*自行定义字体名称*/
+    src: url("../font/黑体Heavy.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: "SourceHanSansCN-Medium";
+    /*自行定义字体名称*/
+    src: url("../font/SourceHanSansCN-Medium.otf") format('truetype');
+}
+
+
+.highlight-data {
+    /* 强调数据格式 */
+    font-family: YouSheBiaoTiHei;
+    font-size: 50px;
+    font-weight: normal;
+    letter-spacing: 0em;
+    color: #3D3D3D;
+}
+
+.highlight-title {
+    /* 标题 */
+    font-family: SourceHanSerifCN-Bold;
+    font-size: 64px;
+    font-weight: bold;
+    letter-spacing: 0.11em;
+    color: #3d3d3d;
+}
+
+.quote {
+    /* 引号 */
+    font-family: zcool-gdh;
+    font-size: 70px;
+    color: #3D3D3D;
+
+}
+
+.main-text {
+    /* 正文 */
+    font-family: SourceHanSerifCN-SemiBold;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    text-indent: 2em;
+    color: #3D3D3D;
+}
+
+.num {
+    /* 黑体大数字 */
+    font-family: SourceHanSansCN-Heavy;
+    font-size: 45px;
+    color: #3D3D3D;
+}
+
+.gradient-border {
+    /* 渐变边框格式 */
+    border: 2px solid transparent;
+    border-radius: 39px;
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+    background-image: linear-gradient(to right, #F2F6F5, #F2F6F5), linear-gradient(to bottom, #AACABC, transparent 90%);
+    /*linear-gradient() 用于创建一个表示两种或多种颜色线性渐变的图片。*/
+}
+
+.gradient-box {
+    /* 渐变背景 */
+    border-radius: 48px;
+    background: linear-gradient(180deg, #D9EBE3 0%, #D9EBE3 18%, rgba(255, 255, 255, 0.00) 100%, rgba(255, 255, 255, 0.00) 100%);
+}
+
+.progress {
+    /* 进度条 */
+    position: absolute;
+    left: 60.07px;
+    top: 40px;
+    width: 1799.86px;
+    height: 83px;
+}
+
+body>div {
+    /* 页面大小及背景色 */
+    position: relative;
+    width: 100%;
+    height: 1080px;
+    /* 下面两行后续需要调整 */
+    background: #F2F6F5;
+    /* border-bottom: #000000 1px solid; */
+}
+
+
+/********************** 初始化 end ********************/
+
+/********************** page0 start ********************/
+.page0 {
+    height: 2160px;
+    background-image: url(../img/page0.jpg);
+}
+
+.page0 .pic {
+    width: 100%;
+    height: 1080px;
+}
+
+.page0 .box {
+    width: 100%;
+    height: 1080px;
+}
+
+.page0 .box .title {
+    /* title */
+    margin: 0 auto;
+    padding-top: 100px;
+    width: 634px;
+    height: 141.21px;
+    background-image: url(../img/title-p0.png);
+}
+
+.sword1 {
+    /* 加粗文字 */
+    font-family: SourceHanSerifCN-Bold;
+    font-size: 30px;
+    font-weight: 800;
+    color: #465e1d;
+}
+
+.sword2 {
+    /* 加粗文字 */
+    font-family: SourceHanSerifCN-Bold;
+    font-size: 36px;
+    font-weight: 800;
+    color: #465e1d;
+}
+
+.page0 .box .subtitle {
+    /* "山东省是转型中国的经典缩影。" */
+    margin: 40px auto;
+    /* padding-left: 20px; */
+    width: 536px;
+    height: 34px;
+    font-family: SourceHanSerifCN-Bold;
+    font-size: 30px;
+    /* font-weight: bold; */
+    line-height: 34px;
+    letter-spacing: 0em;
+    color: #3D3D3D;
+    text-align: center;
+}
+
+.page0 .box .text1 {
+    width: 1309.9px;
+    height: 190.65px;
+    margin: 20px auto;
+    margin-top: 70px;
+    text-align: center;
+}
+
+.page0 .box .text2 {
+    width: 1238.38px;
+    height: 172.98px;
+    margin: 0px auto;
+    margin-top: 40px;
+    padding: 60px 100px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 30px;
+}
+
+/********************** page0 end ********************/
+
+/********************** page1 start ********************/
+.page1 #chart1 {
+    /* GDP graph */
+    position: absolute;
+    left: 167.45px;
+    top: 150px;
+    width: 800px;
+    height: 600px;
+}
+
+.page1 #chart2 {
+    /* CO2 graph */
+    position: absolute;
+    left: 1100px;
+    top: 150px;
+    width: 800px;
+    height: 600px;
+}
+
+.page1 .text {
+    position: absolute;
+    left: 50%;
+    margin-left: -268px;
+    top: 830px;
+    width: 536px;
+    height: 160.54px;
+    padding: 0 20px;
+    padding-top: 20px;
+    border-radius: 10px;
+    border: 2px solid #BAD5C4;
+    box-shadow: 10px 10px 0px 0px #E6EDE4;
+    color: #547569;
+}
+
+/********************** page1 end ********************/
+
+
+/********************** page2 start ********************/
+.page2 #chart3 {
+    /* CO2 graph */
+    position: absolute;
+    left: 120.75px;
+    top: 200px;
+    width: 800px;
+    height: 600px;
+}
+
+.page2 .text1 {
+
+    position: absolute;
+    left: 241.64px;
+    bottom: 100px;
+    width: 577.13px;
+    height: 120.4px;
+}
+
+.page2 .text1 span:nth-child(1) {
+
+    /* 二氧化碳生产力指的是单位二氧化碳排放所产出的GDP，碳生产力的提高意味着用更少的物质和能源消耗产生出更多的社会财富。 */
+    position: absolute;
+    left: 30.64px;
+    top: 21.2px;
+    width: 515.86px;
+    height: 78px;
+    font-family: 'SourceHanSerifCN-Medium';
+    font-size: 18px;
+    font-weight: 400;
+    text-indent: 2em;
+    letter-spacing: 0.11em;
+    /* 淡蓝灰 */
+    color: #9e9e9e;
+}
+
+.time {
+    /* 组 19 */
+    position: absolute;
+    left: 1126.49px;
+    top: 272.44px;
+    width: 545.45px;
+    height: 535.12px;
+    /* background-color: pink; */
+}
+
+.time h3 {
+    display: inline-block;
+    font-family: 'SourceHanSansCN-Medium"';
+    color: #2E4D49;
+}
+
+.time .max {
+    /* 2000 */
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 545.45px;
+    height: 180.75px;
+}
+
+.time p {
+    position: absolute;
+    left: 62.63px;
+    top: 93.75px;
+    width: 485px;
+    height: 87px;
+}
+
+.time h5 {
+    display: inline-block;
+    position: absolute;
+    left: 200px;
+    top: 35px;
+    font-family: 'SourceHanSansCN-Medium"';
+    color: #2E4D49;
+}
+
+.time .down {
+    /* 2005 */
+    position: absolute;
+    left: 0px;
+    top: 339.7px;
+    width: 536.39px;
+    height: 195.42px;
+}
+
+/********************** page2 end ********************/
+
+/********************** page3 start ********************/
+.page3 .title {
+
+    /* title */
+    position: absolute;
+    left: 91.25px;
+    top: 142.8px;
+    width: 649.02px;
+    height: 82px;
+}
+
+.page3 .title h4 {
+
+
+    /* 2005年 */
+    position: absolute;
+    left: 90.69px;
+    top: 9.21px;
+    width: 185px;
+    height: 77px;
+    font-family: SourceHanSansCN-Heavy;
+    font-size: 53px;
+    font-weight: 900;
+    letter-spacing: 0em;
+    color: #3D3D3D;
+}
+
+.page3 .title span {
+
+    /* “ */
+    position: absolute;
+    left: -22px;
+    top: -19px;
+    width: 100px;
+    height: 114px;
+    font-family: zcool-gdh;
+    font-size: 100px;
+    font-weight: normal;
+    letter-spacing: 0em;
+    color: #3D3D3D;
+}
+
+.page3 .title p {
+
+    /* 山东产业结构呈现“高碳化”趋势 */
+    position: absolute;
+    left: 303.69px;
+    top: 31.5px;
+    width: 381px;
+    height: 51px;
+    font-family: SourceHanSerifCN-Medium;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 51px;
+    letter-spacing: 0.05em;
+    color: #3D3D3D;
+}
+
+.page3 .lingjiangtai {
+
+    /* 领奖台 */
+    position: absolute;
+    left: 188.58px;
+    top: 367.48px;
+    width: 212px;
+    height: 196.86px;
+}
+
+.page3 .pie {
+    /* 饼图 */
+    position: absolute;
+    left: 551.77px;
+    top: 386.53px;
+    width: 303.13px;
+    height: 177.81px;
+    /* 深蓝绿 */
+    border: NaNpx solid #2E4D49;
+}
+
+.page3 .text1 {
+
+    /* 文字1 */
+    position: absolute;
+    left: 197.61px;
+    top: 733.22px;
+    width: 600.45px;
+    height: 254.43px;
+    padding: 0 25px;
+    padding-top: 15px;
+    font-family: SourceHanSerifCN-Medium;
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 0.09em;
+    text-indent: 2em;
+
+    /* text-align: center; */
+}
+
+.page3 .text2 {
+
+    /* 矩形 2 */
+    position: absolute;
+    left: 1006.76px;
+    top: 200.77px;
+    width: 755.17px;
+    height: 150.66px;
+    padding: 0 25px;
+    padding-top: 25px;
+    font-family: SourceHanSerifCN-SemiBold;
+    font-size: 24px;
+    font-weight: normal;
+    letter-spacing: 0em;
+    text-indent: 2em;
+    color: #3D3D3D;
+}
+
+.page3 .pic {
+
+    /* 等式 */
+    position: absolute;
+    left: 1056.25px;
+    top: 403.84px;
+    width: 660.67px;
+    height: 238.41px;
+}
+
+.page3 .text3 {
+
+    /* 组 27 */
+    position: absolute;
+    left: 1006.76px;
+    top: 733.22px;
+    width: 687.45px;
+    height: 215.83px;
+    padding: 0 25px;
+    padding-top: 41px;
+    border-radius: 48px;
+    font-family: SourceHanSerifCN-Medium;
+    font-size: 24px;
+    font-weight: normal;
+    letter-spacing: 0em;
+    text-indent: 2em;
+}
+
+/********************** page3 end ********************/
+/********************** page4 start ********************/
+.page4 h2 {
+    /* 与此同时 */
+    position: absolute;
+    left: 72.49px;
+    top: 130.19px;
+    width: 299px;
+    height: 92px;
+    /* font-family: SourceHanSerifCN-Bold;
+    font-size: 64px;
+    font-weight: bold;
+    letter-spacing: 0.11em;
+    color: #000000; */
+}
+
+.page4 .german {
+
+    /* 德国 */
+    position: absolute;
+    left: 221.97px;
+    top: 263.72px;
+    width: 727.93px;
+    height: 677.6px;
+}
+
+.page4 .german .title {
+
+    /* 标题 */
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 134.57px;
+    height: 79.82px;
+    border: NaNpx solid #D8D8D8;
+    font-family: SourceHanSerifCN-Bold;
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 0.11em;
+    color: #3D3D3D;
+}
+
+.page4 .german span {
+
+    /* 直线 16 */
+    position: absolute;
+    left: 0px;
+    top: 79.82px;
+    width: 134.57px;
+    height: 1px;
+    border: 4px solid #D8D8D8;
+    background-color: #D8D8D8;
+}
+
+.page4 .german .data {
+
+    /* 数据 */
+    position: absolute;
+    left: 67.28px;
+    top: 127.82px;
+    width: 551.65px;
+    height: 56px;
+    border: NaNpx solid #D8D8D8;
+}
+
+.page4 .german .data h4 {
+
+    /* 60亿欧元 */
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 202.33px;
+    height: 56px;
+    font-family: AlibabaPuHuiTi_2_65_Medium;
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: 0.11em;
+    color: #3D3D3D;
+}
+
+.page4 .german .data span {
+
+    /* 直线 14 */
+    position: absolute;
+    left: 184.33px;
+    top: 26.55px;
+    width: 50.08px;
+    height: 2px;
+    transform: rotate(90deg);
+    border: 4px solid #D8D8D8;
+}
+
+.page4 .german .data p {
+
+    /* 风能发电设备出口收入 */
+    position: absolute;
+    left: 237.65px;
+    top: 8.94px;
+    width: 336px;
+    height: 43px;
+    font-family: SourceHanSerifCN-Medium;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 0.11em;
+    color: #3D3D3D;
+}
+
+
+.page4 .german .graph #chart4 {
+    /* 组 25 */
+    position: absolute;
+    left: 35px;
+    top: 35%;
+    width: 600px;
+    height: 400px;
+    z-index: 2;
+}
+
+.page4 .german .graph h4 {
+
+    /* 全球发电设备交易额 */
+    position: absolute;
+    left: 256.2px;
+    top: 643.6px;
+    width: 162px;
+    height: 34px;
+    font-family: SourceHanSansCN-Regular;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 34px;
+    letter-spacing: 0em;
+    color: #3D3D3D;
+    z-index: 2;
+}
+
+.page4 .german .base img {
+    /* 矩形 23 */
+    position: absolute;
+    left: 59.39px;
+    top: 505.41px;
+    width: 549.33px;
+    height: 197.17px;
+}
+
+.page4 .japan {
+
+    /* 日本 */
+    position: absolute;
+    left: 1032px;
+    top: 263.72px;
+    width: 701.75px;
+    height: 667.48px;
+}
+
+.page4 .japan .title {
+    /* 日本 */
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 116px;
+    height: 72px;
+    font-family: SourceHanSerifCN-Bold;
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 0.11em;
+    color: #3D3D3D;
+}
+
+.page4 .japan .title span {
+
+    /* 直线 17 */
+    position: absolute;
+    left: 0px;
+    top: 80.82px;
+    width: 134.57px;
+    height: 1px;
+    border: 4px solid #D8D8D8;
+    background-color: #D8D8D8;
+    color: #93d1c2;
+    color: rgba(134, 196, 180, 0);
+}
+
+.page4 .japan .data h4 {
+
+    /* 全球最大光伏设备出口国 */
+    position: absolute;
+    left: 185.93px;
+    top: 40.38px;
+    width: 540.82px;
+    height: 34.35px;
+    font-family: SourceHanSerifCN-SemiBold;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 0.11em;
+    color: #3D3D3D;
+    color: rgba(190, 194, 194, 0);
+}
+
+.page4 .japan .data p {
+
+    /* 日本在光伏发电技术领域居世界领先，仅夏普公司的光伏发电设备就占世界的1/3。 */
+    position: absolute;
+    left: 43.34px;
+    top: 127.82px;
+    width: 579.05px;
+    height: 68px;
+    font-family: SourceHanSerifCN-Medium;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-indent: 2em;
+    color: #3D3D3D;
+}
+
+.page4 .japan .graph #chart5 {
+    position: absolute;
+    left: 35px;
+    top: 35%;
+    width: 600px;
+    height: 400px;
+    z-index: 2;
+}
+
+.page4 .japan .graph h4 {
+    /* 全球光伏发电设备 */
+    position: absolute;
+    left: 262.06px;
+    top: 633.48px;
+    width: 144px;
+    height: 34px;
+    font-family: SourceHanSansCN-Regular;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 34px;
+    letter-spacing: 0em;
+    color: #3D3D3D;
+    z-index: 2;
+}
+
+.page4 .japan .base img {
+    /* 矩形 23 */
+    position: absolute;
+    left: 59.39px;
+    top: 505.41px;
+    width: 549.33px;
+    height: 197.17px;
+}
+
+
+
+/********************** page5 start ********************/
+.page5 .text {
+
+    /* 煤炭一直是我国主要的终端消费能源，也是主要的工业能源消费品种，长期以煤为主的能源消费结构给我国带来了比较严重的环境问题。山东是典型的煤炭大省。 */
+    position: absolute;
+    left: 277.94px;
+    top: 139.8px;
+    width: 1364.12px;
+    height: 86px;
+    font-family: SourceHanSerifCN-Medium;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 0.11em;
+    text-indent: 2em;
+    color: #3D3D3D;
+}
+
+.page5>img {
+    /* 煤炭 */
+    position: absolute;
+    left: 708.48px;
+    top: 216.33px;
+    width: 427px;
+    height: 359px;
+}
+
+.page5 #chart6 {
+    position: absolute;
+    left: 140px;
+    top: 600px;
+    width: 720px;
+    height: 440px;
+}
+
+.page5 .text2 {
+    /* 无论是对我国，还是对山东省 */
+    position: absolute;
+    left: 1000px;
+    top: 760px;
+    width: 719.67px;
+    height: 125.71px;
+    padding: 0px 20px;
+    padding-top: 20px;
+    font-family: SourceHanSerifCN-Medium;
+    font-size: 24px;
+    font-weight: normal;
+    letter-spacing: 0em;
+    text-indent: 2em;
+    color: #3D3D3D;
+}
+
+
+
+/********************** page6 start ********************/
+.page6 .title {
+
+    /* 严峻挑战 */
+    position: absolute;
+    left: 80.86px;
+    top: 123px;
+    width: 288px;
+    height: 92px;
+    /* 大标题 */
+    font-family: SourceHanSerifCN-Bold;
+    font-size: 64px;
+    font-weight: bold;
+    letter-spacing: 0.11em;
+    color: #3D3D3D;
+}
+
+.page6 .text1 {
+
+    /* “2010年 */
+    position: absolute;
+    left: 219.86px;
+    top: 264.95px;
+    width: 300px;
+    height: 82px;
+    letter-spacing: 0em;
+}
+
+.page6 .text3 {
+
+    /* 煤炭现有开采储量只能保证矿山生产30年左右，届时将有108对矿井因枯竭而报废。 */
+    position: absolute;
+    left: 1014.86px;
+    top: 386.26px;
+    width: 553.9px;
+    height: 173px;
+    font-family: SourceHanSerifCN-Medium;
+    font-size: 30px;
+    font-weight: normal;
+    letter-spacing: 0em;
+    text-indent: 2em;
+    color: #3D3D3D;
+}
+
+.tip {
+    /* 提示 */
+    position: absolute;
+    left: 123.62px;
+    top: 857.76px;
+    width: 112.07px;
+    height: 32.76px;
+    border-radius: 10px;
+}
+
+.page6 .balls {
+
+    /* ⚪阵 */
+    position: absolute;
+    left: 298.92px;
+    top: 653.73px;
+    width: 494.9px;
+    height: 275.51px;
+    background: #9BB0A5;
+}
+
+.page6 .littlecoal {
+
+    /* 挖煤 */
+    position: absolute;
+    left: 960px;
+    top: 225.64px;
+    width: 223.84px;
+    height: 160.62px;
+}
+
+.page6 .text2>span {
+
+    /* 全省45种主要矿产将有33种不能满足发展的需要。 */
+    position: absolute;
+    left: 298.92px;
+    top: 419.79px;
+    width: 493.04px;
+    height: 130px;
+    font-family: SourceHanSerifCN-Medium;
+    font-size: 30px;
+    font-weight: normal;
+    letter-spacing: 0em;
+    text-indent: 2em;
+    color: #3D3D3D;
+}
+
+.page6 .text1 h2 {
+    /* “2010年 */
+    font-size: 53px;
+    font-weight: 900;
+    letter-spacing: 0em;
+    color: #3D3D3D;
+}
+
+.page6 .text4 {
+    /* 金矿区几乎都已建矿，77%的矿山保有量不用五年即可采完。 */
+    position: absolute;
+    left: 1018.95px;
+    top: 550px;
+    width: 549.81px;
+    height: 129.71px;
+    font-family: SourceHanSerifCN-Medium;
+    font-size: 30px;
+    font-weight: normal;
+    letter-spacing: 0em;
+    text-indent: 2em;
+
+    color: #3D3D3D;
+}
+
+.page6 .mountain {
+    /* 路径 7 */
+    position: absolute;
+    left: 1122.42px;
+    top: 740px;
+    width: 338.78px;
+    height: 173.47px;
+
+}
+
+#little {
+    position: absolute;
+    left: 298.92px;
+    top: 653.73px;
+    width: 450px;
+    height: 275px;
+    margin: 0;
+    padding: 0;
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    background: #9BB0A5;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+}
+
+/********************** page6 end ********************/
+/********************** page7 start ********************/
+.page7 .title {
+
+    /* 落陵煤矿兴衰史 */
+    position: absolute;
+    left: 215.46px;
+    top: 141.37px;
+    width: 280px;
+    height: 34px;
+    font-family: SourceHanSerifCN-SemiBold;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 34px;
+    letter-spacing: 0em;
+    color: #3D3D3D;
+}
+
+.page7 .subtitle {
+
+    /* 煤炭行业的“黄埔军校” */
+    position: absolute;
+    left: 519.91px;
+    top: 158.41px;
+    width: 220px;
+    height: 34px;
+    font-family: SourceHanSansCN-Regular;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 34px;
+    letter-spacing: 0em;
+    color: #3D3D3D;
+}
+
+.page7 .map {
+    /* 组 23 */
+    position: absolute;
+    left: 317.74px;
+    top: 304.62px;
+    width: 617.18px;
+    height: 602px;
+    background-repeat: no-repeat;
+    background-image: url('../img/时间轴.png');
+}
+
+.page7 .photo {
+    /* 挖掘机-做旧 */
+    position: absolute;
+    left: 1090.75px;
+    top: 137.5px;
+    width: 628px;
+    height: 642px;
+}
+
+.page7 .text {
+
+    /* 不论是山东还是全国，都面临着环境问题和资源衰竭的双重压力，能源转型迫在眉睫！ */
+    position: absolute;
+    left: 1172.6px;
+    top: 802.52px;
+    width: 489.8px;
+    height: 120px;
+    font-family: SourceHanSerifCN-SemiBold;
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 40px;
+    letter-spacing: 0.05em;
+    text-indent: 2em;
+    color: #3D3D3D;
+}
+
+.year {
+    position: relative;
+    font-family: SourceHanSansCN-Heavy;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 34px;
+    letter-spacing: 0em;
+    color: #3D3D3D;
+}
+
+.happen {
+    position: relative;
+    font-family: SourceHanSerifCN-Medium;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 34px;
+    letter-spacing: 0em;
+    color: #3D3D3D;
+}
+
+.spot {
+    position: absolute;
+    background-image: url('../img/点.png');
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+}
+
+.mapitem {
+    display: none;
+    position: absolute;
+    font-family: SourceHanSerifCN-Bold;
+    font-size: 22px;
+}
+
+#year1970 .year {
+    left: 0px;
+    top: -40px;
+}
+
+#year1970 .spot {
+    left: 10px;
+    top: -5px;
+}
+
+#year1970 .happen {
+    left: -40px;
+    top: -20px;
+}
+
+#year1976 .year {
+    left: 350px;
+    top: -40px;
+}
+
+#year1976 .spot {
+    left: 360px;
+    top: -5px;
+}
+
+#year1976 .happen {
+    left: 320px;
+    top: -20px;
+}
+
+#year1983 .year {
+    left: 450px;
+    top: 160px;
+}
+
+#year1983 .spot {
+    left: 460px;
+    top: 192px;
+}
+
+#year1983 .happen {
+    left: 400px;
+    top: 180px;
+}
+
+#year1987 .year {
+    left: 150px;
+    top: 160px;
+}
+
+#year1987 .spot {
+    left: 160px;
+    top: 192px;
+}
+
+#year1987 .happen {
+    left: 100px;
+    top: 180px;
+}
+
+#year1990 .year {
+    left: 220px;
+    top: 360px;
+}
+
+#year1990 .spot {
+    left: 230px;
+    top: 392px;
+}
+
+#year1990 .happen {
+    left: 130px;
+    top: 380px;
+}
+
+#year2010 .year {
+    left: 490px;
+    top: 555px;
+}
+
+#year2010 .spot {
+    left: 505px;
+    top: 590px;
+}
+
+#year2010 .happen {
+    left: -5px;
+    top: 549px;
+}
+
+.sp {
+    font-family: SourceHanSerifCN-Bold;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 34px;
+    letter-spacing: 0.01em;
+    color: #3D3D3D;
+}
+
+/********************** page7 end ********************/
+/********************** page8 start ********************/
+.page8 .text {
+
+    /* 十一五 */
+    position: absolute;
+    left: 200.41px;
+    top: 193.53px;
+    width: 670.51px;
+    height: 457.77px;
+    border-radius: 56px;
+}
+
+.page8 .green {
+
+    /* 矩形 14 */
+    position: absolute;
+    left: 24.08px;
+    top: 25.63px;
+    width: 646.43px;
+    height: 432.14px;
+}
+
+.page8 #chart7 {
+    /* image */
+    position: absolute;
+    left: 950px;
+    top: 180px;
+    width: 740px;
+    height: 520px;
+}
+
+.page8 .text3 {
+
+    /* 自2005年以后，山东省二氧化碳增长率大幅下降，稳定在一个较低的水平，这与山东省节能减排政策的落实和力度的加大是分不开的。 */
+    position: absolute;
+    left: 972.18px;
+    top: 746.15px;
+    width: 700px;
+    height: 140px;
+    padding: 0 20px;
+    padding-top: 20px;
+    font-family: SourceHanSerifCN-Medium;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 34px;
+    text-indent: 2em;
+    letter-spacing: 0em;
+    color: #3D3D3D;
+}
+
+.page8 .green #subtitle {
+    /* 优化发展能源工业 */
+    position: absolute;
+    left: 50%;
+    margin-left: -144px;
+    top: 76.37px;
+    width: 288px;
+    height: 34px;
+    font-family: SourceHanSansCN-Bold;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 34px;
+    letter-spacing: 0em;
+    /* 深蓝绿 */
+    color: #2E4D49;
+}
+
+.page8 .text #title {
+
+    /* “十一五如是说 */
+    position: absolute;
+    left: 0;
+    top: 0px;
+    width: 372px;
+    height: 34px;
+    font-family: SourceHanSerifCN-Bold;
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 34px;
+    letter-spacing: 0em;
+    color: #2E4D49;
+}
+
+.page8 .text ul {
+
+    /* 组 30 */
+    position: absolute;
+    /* left: 212.3px; */
+    left: 50%;
+    margin-left: -135px;
+    top: 140px;
+    width: 270px;
+    height: 208.44px;
+    /* 深蓝绿 */
+    color: #2E4D49;
+    text-align: center;
+    font-family: SourceHanSerifCN-Medium;
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 60px;
+}
+
+.page8 .text2 {
+    /* 随着十一五政策的提出，山东省资源型城市纷纷加快产业转型步伐，从“灰黑印象”回归“绿色主题”。 */
+    position: absolute;
+    left: 215.49px;
+    top: 746.15px;
+    width: 617.43px;
+    height: 124.64px;
+    padding: 0 20px;
+    padding-top: 20px;
+    font-family: SourceHanSerifCN-Medium;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 34px;
+    text-indent: 2em;
+    letter-spacing: 0.05em;
+    /* 深蓝绿 */
+    color: #2E4D49;
+}
+
+/********************** page8 end ********************/
+/********************** page9 start ********************/
+.page9 .title {
+
+    /* 反超！ */
+    position: absolute;
+    left: 147.53px;
+    top: 72px;
+    width: 230px;
+    height: 92px;
+    /* 大标题 */
+    font-family: SourceHanSerifCN-Bold;
+    font-size: 64px;
+    font-weight: bold;
+    letter-spacing: 0.11em;
+    color: #3D3D3D;
+}
+
+.page9 #chart8 {
+    /* image */
+    position: absolute;
+    left: 100px;
+    top: 230px;
+    width: 800px;
+    height: 800px;
+}
+
+.page9 .subtitle {
+    /* 2015年第三产业产值首次反超第二产业! */
+    position: absolute;
+    left: 1050px;
+    top: 198.04px;
+    width: 667px;
+    height: 49px;
+    font-family: YouSheBiaoTiHei;
+    font-size: 36px;
+    font-weight: normal;
+    line-height: NaNpx;
+    letter-spacing: NaNem;
+    color: #3D3D3D;
+}
+
+.page9 .text {
+
+    /* 山东省第二产业偏向于高投入、高能源的发展方式，是三次产业中碳排放的主要来源。经济增长特别是第二产业的发展对发展中国家的碳排放具有决定性的影响。 */
+    position: absolute;
+    left: 1050px;
+    top: 313.75px;
+    width: 631.39px;
+    height: 108px;
+    font-family: SourceHanSerifCN-Medium;
+    font-size: 22px;
+    /* 淡蓝灰 */
+    color: #ABB5B3;
+
+}
+
+.page9 .littletitle {
+
+    /* “历史转变 */
+    position: absolute;
+    left: 1050px;
+    top: 536px;
+    width: 272px;
+    height: 34px;
+    font-family: SourceHanSerifCN-Bold;
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 34px;
+    letter-spacing: 0em;
+    /* 深蓝绿 */
+    color: #2E4D49;
+}
+
+.page9 .green {
+    /* 对山东省这样一个工业大省来说，第三产业产值反超第二产业是一个历史性的转变，这是山东省产业结构调整的一大成就，对于我国产业结构调整具有重要意义。 */
+    position: absolute;
+    left: 1050px;
+    top: 560px;
+    width: 600px;
+    height: 296.29px;
+    padding: 0 40px;
+    padding-top: 35px;
+    line-height: 53px;
+}
+
+
+/********************** page9 end ********************/
+/********************** page10 start ********************/
+.page10 .title {
+
+    /* 双碳！ */
+    position: absolute;
+    left: 147.53px;
+    top: 72px;
+    width: 230px;
+    height: 92px;
+    /* 大标题 */
+    font-family: SourceHanSerifCN-Bold;
+    font-size: 64px;
+    font-weight: bold;
+    letter-spacing: 0.11em;
+    color: #3D3D3D;
+}
+
+.page10 .subtitle {
+
+    /* 2020.9.22 习近平在第七十五届联合国大会一般性辩论上发表重要讲话 */
+    position: absolute;
+    left: 254.96px;
+    top: 183.49px;
+    width: 1420px;
+    height: 34px;
+    font-family: SourceHanSerifCN-Heavy;
+    font-size: 45px;
+    font-weight: 900;
+    line-height: 34px;
+    letter-spacing: 0em;
+    color: #3D3D3D;
+}
+
+.page10 p {
+
+    /* “双碳”概念的提出加快了我国各省市能源转型的脚步。 */
+    position: absolute;
+    left: 549px;
+    top: 262.03px;
+    width: 830px;
+    height: 53px;
+    font-family: SourceHanSerifCN-Medium;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 53px;
+    letter-spacing: 0.1em;
+    color: #3D3D3D;
+}
+
+.page10 .green {
+
+    /* 矩形 16 */
+    position: absolute;
+    left: 381.43px;
+    top: 359.57px;
+    width: 1157.14px;
+    height: 307.46px;
+    border-radius: 48px;
+    background: linear-gradient(180deg, #D9EBE3 0%, #D9EBE3 2%, #D9EBE3 32%, rgba(255, 255, 255, 0.00) 100%, rgba(255, 255, 255, 0.00) 100%);
+}
+
+.page10 .green p {
+
+    /* “中国将提高国家自主贡献力度，采取更加有力的政策和措施，二氧化碳排放力争于2030年前达到峰值，努力争取2060年前实现碳中和。” */
+    position: absolute;
+    left: 120.27px;
+    top: 42.3px;
+    width: 916.61px;
+    height: 159px;
+    font-family: SourceHanSerifCN-Medium;
+    font-size: 36px;
+    line-height: 53px;
+    letter-spacing: 0.1em;
+    color: #3D3D3D;
+}
+
+.page10 .mountain {
+
+    /* 碳达峰 */
+    position: absolute;
+    left: 451.42px;
+    top: 696.85px;
+    width: 465.29px;
+    height: 293.82px;
+    border: NaNpx solid #D8D8D8;
+}
+
+.page10 .zero_ {
+
+    /* 碳中和 */
+    position: absolute;
+    left: 1142.01px;
+    top: 696.85px;
+    width: 326.57px;
+    height: 293.82px;
+}
+
+/********************** page10 end ********************/
+/********************** page11 start ********************/
+.page11 .title {
+    /* 双碳！ */
+    position: absolute;
+    left: 147.53px;
+    top: 72px;
+    width: 230px;
+    height: 92px;
+    /* 大标题 */
+    font-family: SourceHanSerifCN-Bold;
+    font-size: 64px;
+    font-weight: bold;
+    letter-spacing: 0.11em;
+    color: #3D3D3D;
+}
+
+.page11 .subtitle {
+
+    /* 截至2020年底，山东省能源转型成绩斐然，可再生能源高质量发展。 */
+    position: absolute;
+    left: 370.73px;
+    top: 118px;
+    width: 1020px;
+    height: 43px;
+    font-family: SourceHanSerifCN-SemiBold;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 0.11em;
+    color: #3D3D3D;
+}
+
+.page11 ul {
+    position: relative;
+    left: 274px;
+    top: 240px;
+}
+
+.page11 ul li {
+    float: left;
+    margin-bottom: 60px;
+    margin-right: 200px;
+    width: 600px;
+    height: 363px;
+    text-align: center;
+
+}
+
+.page11 ul li p {
+    margin-top: 30px;
+}
+
+/********************** page11 end ********************/
+
+/********************** page12 start ********************/
+.page12 .title {
+
+    /* 十四五！ */
+    position: absolute;
+    left: 112.75px;
+    top: 41px;
+    width: 285px;
+    height: 92px;
+    /* 大标题 */
+    font-family: SourceHanSerifCN-Bold;
+    font-size: 64px;
+    font-weight: bold;
+    letter-spacing: 0.11em;
+    color: #3D3D3D;
+}
+
+.page12 .subtitle {
+
+    /* 2021.4.6 山东省发布《山东省国民经济和社会发展第十四个五年规划和2035年远景目标纲要》 */
+    position: absolute;
+    left: 207px;
+    top: 175.2px;
+    width: 1520px;
+    height: 34px;
+    font-family: SourceHanSerifCN-Heavy;
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 34px;
+    letter-spacing: 0em;
+    color: #3D3D3D;
+}
+
+.page12 .text1 {
+
+    /* 立足能源消费大省实际，统筹推进化石能源清洁高效利用与非化石能源规模化发展，优化调整能源结构，加快能源发展方式转变。 */
+    position: absolute;
+    left: 531.43px;
+    top: 237.35px;
+    width: 857.14px;
+    height: 74px;
+    font-family: SourceHanSerifCN-Regular;
+    font-size: 22px;
+    font-weight: normal;
+    line-height: 37px;
+    text-align: center;
+    letter-spacing: 0.11em;
+    /* 淡蓝灰 */
+    color: #ABB5B3;
+}
+
+.page12 .title2 {
+
+    /* “2025年能源发展主要目标 */
+    position: absolute;
+    left: 229.45px;
+    top: 339.51px;
+    width: 580px;
+    height: 73px;
+    font-family: SourceHanSerifCN-Bold;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 0.11em;
+    color: #3D3D3D;
+    /* time */
+    text-shadow: 3px 2px 2px -79px rgba(0, 0, 0, 0.3);
+}
+
+.page12 .box {
+
+    /* 目标 */
+    position: absolute;
+    left: 309.61px;
+    top: 484.59px;
+    width: 1300.77px;
+    height: 498.32px;
+    border-radius: 43px;
+}
+
+.targetnum {
+    /* 数字强调样式 */
+    font-family: YouSheBiaoTiHei;
+    font-size: 30px;
+    font-weight: normal;
+    letter-spacing: 0em;
+    color: rgb(45, 95, 57);
+}
+
+
+/********************** page12 end ********************/
+
+/********************** page13 start ********************/
+.page13 .title {
+    /* 十四五！ */
+    position: absolute;
+    left: 112.75px;
+    top: 41px;
+    width: 285px;
+    height: 92px;
+    /* 大标题 */
+    font-family: SourceHanSerifCN-Bold;
+    font-size: 64px;
+    font-weight: bold;
+    letter-spacing: 0.11em;
+    color: #3D3D3D;
+}
+
+.page13 .box {
+    /* 目标 */
+    position: absolute;
+    left: 531.04px;
+    top: 163.77px;
+    width: 857.92px;
+    height: 394.81px;
+    border-radius: 43px;
+}
+
+.box .card p {
+    font-size: 24px;
+}
+
+.page13 .box .card:nth-child(1) {
+    /* 矩形 1 */
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 372.2px;
+    height: 394.81px;
+    border-radius: 43px;
+    /* 绿色渐变 */
+    background: linear-gradient(180deg, #C2EAD8 0%, #C2EAD8 18%, rgba(255, 255, 255, 0.00) 100%, rgba(255, 255, 255, 0.00) 100%);
+    /* greenShadow */
+    box-shadow: 10px 4px 18px 0px #D8E5DF;
+}
+
+.page13 .box .card:nth-child(2) {
+    /* 矩形 2 */
+    position: absolute;
+    left: 485.71px;
+    top: 0px;
+    width: 372.2px;
+    height: 394.81px;
+    border-radius: 43px;
+    /* 绿色渐变 */
+    background: linear-gradient(180deg, #C2EAD8 0%, #C2EAD8 18%, rgba(255, 255, 255, 0.00) 100%, rgba(255, 255, 255, 0.00) 100%);
+    /* greenShadow */
+    box-shadow: 10px 4px 18px 0px #D8E5DF;
+}
+
+.page13 .littletitle {
+    /* “2035年展望 */
+    position: absolute;
+    left: 219.78px;
+    top: 609.95px;
+    width: 343px;
+    height: 73px;
+    font-family: SourceHanSerifCN-Bold;
+    font-size: 45px;
+    font-weight: bold;
+    letter-spacing: 0.11em;
+    color: #3D3D3D;
+    /* time */
+    text-shadow: 3px 2px 2px -79px rgba(0, 0, 0, 0.3);
+}
+
+.page13 span {
+
+    /* 能源与生态环境实现和谐发展 */
+    position: absolute;
+    left: 581.41px;
+    top: 630.36px;
+    width: 360px;
+    height: 54px;
+    font-family: SourceHanSerifCN-Regular;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 54px;
+    letter-spacing: 0.14em;
+    color: #3D3D3D;
+}
+
+.page13 .box2 {
+    /* 组 30 */
+    position: absolute;
+    left: 263.99px;
+    top: 734.21px;
+    width: 1272.36px;
+    height: 240.87px;
+    border-radius: 38px;
+}
+
+.page13 .box2 .card:nth-child(1) {
+    /* 矩形 18 */
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 579.67px;
+    height: 240.87px;
+    border-radius: 38px;
+    /* 横向浅绿渐变 */
+    background: linear-gradient(90deg, #D8EDE4 0%, #D8EDE4 18%, rgba(255, 255, 255, 0.00) 100%, rgba(255, 255, 255, 0.00) 100%);
+    box-shadow: 10px 4px 18px 0px rgba(216, 229, 223, 0.5);
+}
+
+.page13 .box2 .card:nth-child(2) {
+
+    /* 矩形 17 */
+    position: absolute;
+    left: 692.69px;
+    top: 0px;
+    width: 579.67px;
+    height: 240.87px;
+    border-radius: 38px;
+    /* 横向浅绿渐变 */
+    background: linear-gradient(90deg, #D8EDE4 0%, #D8EDE4 18%, rgba(255, 255, 255, 0.00) 100%, rgba(255, 255, 255, 0.00) 100%);
+    box-shadow: 10px 4px 18px 0px rgba(216, 229, 223, 0.5);
+}
+
+
+
+/********************** page13 end ********************/
+
+/********************** page14 start ********************/
+.page14 .title {
+
+    /* 道阻且长 */
+    position: absolute;
+    left: 76.46px;
+    top: 29.81px;
+    width: 300px;
+    height: 92px;
+    /* 大标题 */
+    font-family: SourceHanSerifCN-Bold;
+    font-size: 64px;
+    font-weight: bold;
+    letter-spacing: 0.11em;
+    color: #3D3D3D;
+}
+
+.page14 .subtitle {
+
+    /* 无论是山东还是中国，取得的成绩值得肯定，但是还有许多的问题亟待解决。 */
+    position: absolute;
+    left: 404.8px;
+    top: 66.85px;
+    width: 950px;
+    height: 53px;
+    font-family: SourceHanSerifCN-Medium;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 53px;
+    letter-spacing: 0.07em;
+    color: #3D3D3D;
+}
+
+.page14 .text {
+
+    /* 对于现阶段的中国，曾是经济支柱的第二产业早已退居第三产业之后， 但值得注意的是，随着“互联网经济”的不断增长，传统意义上低能耗的第三产业或将或将成为新的能耗大户。 */
+    position: absolute;
+    left: 404.8px;
+    top: 195.44px;
+    width: 1139.36px;
+    height: 129.93px;
+    font-family: SourceHanSerifCN-Medium;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 53px;
+    text-align: center;
+    letter-spacing: 0.07em;
+    color: #3D3D3D;
+}
+
+.page14 #em {
+    font-family: SourceHanSerifCN-Bold;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 53px;
+}
+
+.page14 .littletitle {
+
+    /* “2019年 */
+    position: absolute;
+    left: 215.46px;
+    top: 400.95px;
+    width: 274.13px;
+    height: 69.32px;
+    font-family: SourceHanSansCN-Heavy;
+    font-size: 45px;
+    font-weight: 900;
+    letter-spacing: 0.09em;
+    color: #3D3D3D;
+}
+
+.page14 .text2 {
+
+    /* 组 29 */
+    position: absolute;
+    left: 258px;
+    top: 435.5px;
+    width: 1373px;
+    height: 413px;
+    border-radius: 48px;
+}
+
+.page14 .text2 .green {
+
+    /* 组 4 */
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1373px;
+    height: 413px;
+    border-radius: 48px;
+    background: linear-gradient(180deg, #D9EBE3 0%, #D9EBE3 2%, #D9EBE3 32%, rgba(255, 255, 255, 0.00) 100%, rgba(255, 255, 255, 0.00) 100%);
+}
+
+.page14 .text2 .green span {
+    /* 中国数据中心数量约有7.4万个，已建成的超大型、大型数据中心数量占比达到12.7%。 随着国内互联网经济的发展，这一数量将不断增长,与之对应的能耗增速也增长迅速。 根据中国电子节能技术协会的数据，中国数据中心的耗电量已连续8年增速超12%，2020年总耗电量将达2962亿kWh。 */
+    position: absolute;
+    left: 77.52px;
+    top: 55.66px;
+    width: 1207.68px;
+    height: 318px;
+    font-family: YouSheBiaoTiHei;
+    font-size: 36px;
+    font-weight: normal;
+    letter-spacing: 0em;
+    text-indent: 2em;
+    color: #3D3D3D;
+}
+
+/********************** page14 end ********************/
+/********************** page15 start ********************/
+.page15 {
+    background-image: url(../img/最后一页bg.jpg);
+}
+
+.page15 .text {
+
+    /* 组 5 */
+    position: absolute;
+    left: 320px;
+    top: 140.78px;
+    width: 1280px;
+    height: 583.03px;
+
+}
+
+.page15 #title {
+
+    /* 道阻且长，行则将至，行而不辍，未来可期。 */
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1280px;
+    height: 34px;
+    font-family: SourceHanSerifCN-Bold;
+    font-size: 64px;
+    font-weight: bold;
+    line-height: 34px;
+    letter-spacing: 0em;
+    color: #3D3D3D;
+}
+
+.page15 #p1 {
+
+    /* 目前疫情形势仍不容乐观，世界经济陷入低迷，应对气候问题成为发展新能源、新技术、新商业、复苏经济以及抢占未来十几年发展优势的重要契机。 */
+    position: absolute;
+    left: 58.95px;
+    top: 215.42px;
+    width: 1162.09px;
+    height: 165px;
+    font-family: SourceHanSerifCN-Medium;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 55px;
+    letter-spacing: 0em;
+    color: #3D3D3D;
+}
+
+
+.page15 #p2 {
+
+    /* 同时在不断加剧的全球气候变暖面前，实现碳中和决不是终点，它只是一个阶段性的成果，我们要走的路还很漫长。 */
+    position: absolute;
+    left: 58.26px;
+    top: 473.03px;
+    width: 1163.48px;
+    height: 110px;
+    font-family: SourceHanSerifCN-Medium;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 55px;
+    letter-spacing: 0em;
+    color: #3D3D3D;
+}
+
+/********************** page15 end ********************/

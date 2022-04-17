@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #flag {
+            position: absolute;
+            left: 195.72px;
+            top: 396.12px;
+            width: 212px;
+            height: 196.86px;
+            border: NaNpx solid #D8D8D8;
+        }
+
+        #word {
+            position: absolute;
+            left: 0px;
+            top: 12.33px;
+            width: 212px;
+            height: 52px;
+            font-family: SourceHanSansCN-Heavy;
+            font-size: 36px;
+            font-weight: 900;
+            letter-spacing: 0em;
+            color: #EBEBEB;
+            z-index: -2;
+        }
+
+        #bottom {
+            position: absolute;
+            left: 8.55px;
+            top: 196.86px;
+            width: 194.9px;
+            height: 0px;
+            border: 4px solid #D8D8D8;
+            background-color: #D8D8D8;
+        }
+
+        #r1 {
+            position: absolute;
+            left: 85.02px;
+            bottom: 0px;
+            width: 47.96px;
+            height: 132.55px;
+            border-radius: 2px;
+            background: #D8D8D8;
+        }
+
+        #r1::before {
+            content: '1';
+            font-family: SourceHanSansCN-Heavy;
+            font-size: 36px;
+            font-weight: 900;
+            color: #FFFFFF;
+            padding-left: 12px;
+        }
+
+        #r2 {
+            position: absolute;
+            left: 29.33px;
+            bottom: 0px;
+            width: 47.96px;
+            height: 97.65px;
+            border-radius: 2px;
+            background: #D8D8D8;
+        }
+
+        #r2::before {
+            content: '2';
+            font-family: SourceHanSansCN-Heavy;
+            font-size: 36px;
+            font-weight: 900;
+            letter-spacing: 0em;
+            color: #ABB5B3;
+            padding-left: 12px;
+
+        }
+
+        #r3 {
+            position: absolute;
+            left: 144.71px;
+            bottom: 0px;
+            width: 47.96px;
+            height: 62.42px;
+            border-radius: 2px;
+            background: #D8D8D8;
+        }
+
+        #r3::before {
+            content: '3';
+            font-family: SourceHanSansCN-Heavy;
+            font-size: 36px;
+            font-weight: 900;
+            letter-spacing: 0em;
+            color: #ABB5B3;
+            padding-left: 12px;
+            
+        }
+
+        #gan {
+            position: absolute;
+            left: 98.77px;
+            top: 5px;
+            width: 2.55px;
+            height: 61.94px;
+            background: #D8D8D8;
+        }
+
+        #redf {
+            position: absolute;
+            left: 101.08px;
+            top: 66.21px;
+            /* width: 32.67px;
+            height: 22.24px; */
+            border-top: 22.24px solid red;
+            border-right: 32.67px solid transparent;
+            animation: flag_move 4s;
+            animation-fill-mode:forwards;
+            z-index: -1;
+        }
+
+        @keyframes flag_move {
+            0% {
+                transform: translate(0px, 0px);
+            }
+            100% {
+                transform: translate(0px, -60px);
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="flag">
+        <div id="word">SHANDONG</div>
+        <div id="bottom"></div>
+        <div id="r1"></div>
+        <div id="r2"></div>
+        <div id="r3"></div>
+        <div id="gan"></div>
+        <div id="redf"></div>
+    </div>
+</body>
+
+</html>
